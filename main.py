@@ -3,7 +3,7 @@ import random
 
 logging.basicConfig(
     level=logging.DEBUG,
-    filename="../Temp/log",
+    filename="main.log",
     format="[%(asctime)s.%(msecs)03d] %(levelname)-7s| %(process)06d >> %(thread)d | %(filename)s:%(lineno)d %(funcName)s - %(message)s",
     datefmt="%d-%m-%Y %H:%M:%S"
 )
@@ -19,4 +19,4 @@ def sqrt(x):
 
 if __name__ == "__main__":
     a = 4 - multiply(2,2)
-    print(a)
+    logger.info(a)
