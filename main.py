@@ -19,4 +19,6 @@ def sqrt(x):
 
 if __name__ == "__main__":
     a = 4 - multiply(2,2)
+    logger = logging.getLogger()
     logger.info(a)
+
