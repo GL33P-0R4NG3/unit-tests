@@ -9,12 +9,14 @@ logging.basicConfig(
 )
 
 def multiply(x, y):
-    return x + y
+    return x * y
 
 def divide(x, y):
     return x / y
 
 def sqrt(x):
+    if x < 0:
+        raise ValueError("Cannot take the square root of a negative number")
     return x ** (1 / 2)
 
 if __name__ == "__main__":
