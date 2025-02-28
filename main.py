@@ -1,5 +1,4 @@
 import logging
-import random
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -9,7 +8,7 @@ logging.basicConfig(
 )
 
 def multiply(x, y):
-    return x * y
+    return x + y
 
 def divide(x, y):
     return x / y
